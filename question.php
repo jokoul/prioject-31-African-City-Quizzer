@@ -46,11 +46,12 @@ $choices = $mysqli->query($query) or die($mysqli->error . __LINE__);
         ></script>
     </head>
     <body>
-        <div class="content">
+        
         <header>
             <h1>African City Quizzer</h1>
             <h2>Test Your African Geography Knowledge</h2>
         </header>
+        
         <main>
             <div class="container">
                 <div class="current">Question <?php echo $question['question_number']; ?> of <?php echo $total; ?></div>
@@ -68,7 +69,7 @@ $choices = $mysqli->query($query) or die($mysqli->error . __LINE__);
                 </form>
             </div>
         </main>
-        </div>
+        
         <?php include 'footer.php' ?>
     </body>
 </html>

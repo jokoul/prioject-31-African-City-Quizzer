@@ -16,11 +16,12 @@ session_start();
         ></script>
     </head>
     <body>
-        <div class="content">
+        
         <header>
             <h1>African City Quizzer</h1>
             <h2>Test Your African Geography Knowledge</h2>
         </header>
+        
         <main>
             <div class="container">
                 <h3>Congratulation!</h3>
@@ -29,7 +30,7 @@ session_start();
                 <a href="index.php" class="start">Take Again</a>
             </div>
         </main>
-        </div>
+        
         <?php include 'footer.php' ?>
     </body>
 </html>

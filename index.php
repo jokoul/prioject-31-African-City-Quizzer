@@ -25,11 +25,12 @@
         ></script>
     </head>
     <body>
-        <div class="content">
+        
         <header>
             <h1>African City Quizzer</h1>
             <h2>Test Your African Geography Knowledge</h2>
         </header>
+        
         <main>
             <div class="container">
                 <p>Choose the right answer among the list below.</p>
@@ -41,7 +42,7 @@
                 <a href="question.php?n=1" class="start">Start Quiz</a>
             </div>
         </main>
-        </div>
+    
         <?php include 'footer.php' ?>
     </body>
 </html>

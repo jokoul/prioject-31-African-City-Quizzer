@@ -101,19 +101,13 @@ input[type="number"] {
     width: 100%;
   }
 }
-/*FOOTER*/
-html,
-body {
-  height: 100%;
+main {
+  margin-bottom: 7rem;
 }
-.content {
-  min-height: calc(100% - 10rem);
-}
-:root {
-  --primary: #83c920;
-}
+/*FOOTER STYLE */
 .footer {
-  height: auto;
+  height: 10rem;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,17 +115,14 @@ body {
   background: -webkit-linear-gradient(green, green);
   background: -moz-linear-gradient(green, green);
   background: -o-linear-gradient(green, green);
-  border-radius: 10px 10px 0 0;
   padding: 1rem;
   margin-top: 3rem;
-  position: relative;
+  position: fixed;
   bottom: 0;
-  width: 100%;
-  height: 10rem;
 }
 .footer p {
   font-size: 1.2rem;
-  color: white;
+  color: #fff;
   text-align: center;
 }
 footer div {
@@ -140,7 +131,6 @@ footer div {
 .footer p a {
   text-decoration: none;
   color: #ff6600;
-  font-weight: 600;
 }
 .footer p a:hover {
   text-decoration: underline;
@@ -150,11 +140,11 @@ footer div {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #5d12e7 !important;
+  color: #5d12e7;
   margin-bottom: 1rem;
 }
 .footer ul li a {
-  color: white;
+  color: #fff;
 }
 .footer ul li {
   transition: all 0.2s;
@@ -170,6 +160,6 @@ footer div {
   }
   footer div {
     margin-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
   }
 }
