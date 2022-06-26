@@ -1,4 +1,4 @@
-# prioject-31-African-City-Quizzer
+# project-31-African-City-Quizzer
 
 ## Description
 
