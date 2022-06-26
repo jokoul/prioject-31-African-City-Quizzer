@@ -1,6 +1,7 @@
 <?php
+    session_start();
     include 'database.php';
-
+    unset($_SESSION['score']);
     /*
     * Get Total Questions
     */
@@ -16,8 +17,15 @@
         <meta charset="utf-8"/>
         <title>African City Quizzer</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="img/logo-makr.png">
+        <!--Fontawesome-->
+        <script
+        src="https://kit.fontawesome.com/52339f9582.js"
+        crossorigin="anonymous"
+        ></script>
     </head>
     <body>
+        <div class="content">
         <header>
             <h1>African City Quizzer</h1>
             <h2>Test Your African Geography Knowledge</h2>
@@ -28,15 +36,12 @@
                 <ul>
                     <li><strong>Number of Questions:</strong><?php echo $total; ?></li>
                     <li><strong>Type:</strong>Multiple Choice</li>
-                    <li><strong>Estimated Time:</strong><?php echo $total * .5 ?> Minutes</li>
+                    <li><strong>Estimated Time:</strong><?php echo $total * .2 ?> Minutes</li>
                 </ul>
                 <a href="question.php?n=1" class="start">Start Quiz</a>
             </div>
         </main>
-        <footer>
-            <div class="container">
-               FOOTER To change later
-            </div>
-        </footer>
+        </div>
+        <?php include 'footer.php' ?>
     </body>
 </html>
