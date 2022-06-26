@@ -1,3 +1,28 @@
+<?php
+include 'database.php';
+
+//Set question number
+$number = (int) $_GET['n'];
+/*
+ *Get Question 
+ */
+$query = "SELECT * FROM `questions` WHERE `question_number`=$number";
+//Get Result
+$results = $mysqli->query($query) or die($mysqli->error . __LINE__);
+
+$question = $results->fetch_assoc();//to get an associative array
+// print_r($question)
+
+/*
+ *Get Choices 
+ */
+$query = "SELECT * FROM choices WHERE question_number=$number";
+//Get results
+$choices = $mysqli->query($query) or die($mysqli->error . __LINE__);
+
+// print_r($rows);
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,14 +39,13 @@
             <div class="container">
                 <div class="current">Question 1 of 12</div>
                 <p class="question">
-                    What is the capital of Ethiopia ?
+                    <?php echo $question['text'] ?>
                 </p>
                 <form action="process.php" method="POST">
                     <ul class="choices">
-                        <li><input type="radio" name="choices" value="1"> Addis-Abeba</li>
-                        <li><input type="radio" name="choices" value="1"> Nairobi</li>
-                        <li><input type="radio" name="choices" value="1"> Kigali</li>
-                        <li><input type="radio" name="choices" value="1"> Khartoum</li>
+                        <?php while($row = $choices->fetch_assoc()): ?>
+                            <li><input type="radio" name="choices" value="<?php echo $row['id']; ?>"> <?php echo $row['text']; ?></li>
+                        <?php endwhile; ?>
                     </ul>
                     <input type="submit" name="submit" value="Submit">
                 </form>

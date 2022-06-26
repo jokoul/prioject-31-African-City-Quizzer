@@ -72,6 +72,14 @@ input[type="submit"]:active {
 .choices {
   margin-left: 2rem;
 }
+@media screen and (min-width: 768px) {
+  .choices div {
+    display: flex;
+  }
+  li {
+    width: 50%;
+  }
+}
 /*ADD STYLE*/
 label {
   display: inline-block;
