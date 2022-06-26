@@ -11,6 +11,7 @@ body {
 }
 li {
   list-style-type: none;
+  padding: 0.3rem;
 }
 a {
   text-decoration: none;
@@ -18,5 +19,77 @@ a {
 .container {
   width: 90%;
   margin: 0 auto;
-  overflow: auto;
+  /* overflow: auto; */
+}
+/*INDEX STYLE*/
+/*HEADER STYLE*/
+header {
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 3px solid #f4f4f4;
+  background-color: green;
+  color: white;
+  padding: 1rem;
+}
+header h1,
+header h2 {
+  margin: 1rem auto;
+}
+/*MAIN STYLE*/
+main {
+  padding-bottom: 20px;
+}
+a.start {
+  display: inline-block;
+  font-weight: 800;
+  color: #ff6600;
+  background: linear-gradient(175deg, yellow 55%, green);
+  border: 1px dotted;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+/*QUESTION STYLE*/
+.current {
+  padding: 10px;
+  background: #f4f4f4;
+  border: 2px dotted #ccc;
+  margin: 20px 0 10px 0;
+}
+input[type="submit"] {
+  padding: 0.5rem;
+  margin: 0.5rem auto;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  color: green;
+}
+input[type="submit"]:active {
+  margin-top: 1rem;
+  box-shadow: 0 3px 5px yellow;
+}
+.choices {
+  margin-left: 2rem;
+}
+/*ADD STYLE*/
+label {
+  display: inline-block;
+  width: 40%;
+}
+input[type="text"] {
+  width: 50%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="number"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+@media screen and (max-width: 425px) {
+  input[type="text"] {
+    width: 100%;
+  }
 }

@@ -12,13 +12,9 @@
         </header>
         <main>
             <div class="container">
-                <p>Choose the right answer among the list below.</p>
-                <ul>
-                    <li><strong>Number of Questions:</strong>10</li>
-                    <li><strong>Type:</strong>Multiple Choice</li>
-                    <li><strong>Estimated Time:</strong>4 Minutes</li>
-                </ul>
-                <a href="question.php?n=1" class="start">Start Quiz</a>
+                <p>Congratulation! You have completed the Quizz.</p>
+                <p>Final score: 5</p>
+                <a href="question.php?n=1" class="start">Take Again</a>
             </div>
         </main>
         <footer>
